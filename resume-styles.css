@@ -81,6 +81,11 @@ body{
 	margin-left: 45%;
 	margin-bottom: 20px; 
 }
+#my-image img:hover{
+	box-shadow: 0px 0px 8px 6px rgba(230, 196, 196, 0.3);
+	transform: scale(1.1);
+	transition: transform:0.3s;
+	}
 #about{
 	background: linear-gradient(to bottom, rgba(12,12,14,255) 0%, rgba(12,12,14,255) 40%, rgba(255, 0, 0, 0)60%, rgba(12,12,14,255) 100%), url('https://images.pexels.com/photos/983200/pexels-photo-983200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
     background-size: cover;
@@ -101,7 +106,8 @@ body{
 
 #about #about-p-tag p:hover{
 	color: white;
-	transition: color:0.3s;
+	transform: scale(1.1);
+	transition: color:0.3s, transform 0.3s;
 	}
 body nav .horizontal-list li a{
 	font-weight: light;
