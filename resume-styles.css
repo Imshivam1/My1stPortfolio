@@ -18,7 +18,13 @@ body{
 	list-style: none;
 	padding-left: 0px;
 }
-
+.social-icons{
+	list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
 .horizontal-list li{
 	display: inline-block;
 	margin: 0px 8px 8px 0px;
@@ -109,7 +115,6 @@ body{
 	transform: scale(1.1);
 	transition: color:0.3s, transform 0.3s;
 	}
-
 
 hr{
 	border: none;
