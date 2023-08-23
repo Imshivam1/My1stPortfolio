@@ -78,14 +78,63 @@ body{
 
 }
 
+section{
+	display:flex;
+	width:100%;
+	flex-direction:column;
+	align-items: center;
+}
+.section-heading span{
+	display: inline-block;
+	color:#0061ff;
+	font-size: 40px;
+	margin-right: 0.5rem;
+	padding-top: 10px;
+}
+	/*	skills section 	*/
+
+.skills-display {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skill-progress {
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 25px;
+    overflow: hidden;
+}
+
+.skill-progress > div {
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.skill-name span {
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
 #my-image img{
 	position:absolute;
-	display: block;
-	margin: 0 auto;
+	display: inline-block;
+
 	border-radius: 50%;
 	margin-top: -13vh;
-	margin-left: 45%;
 	margin-bottom: 20px; 
+}
+
+#my-image{
+	margin-right: 15%;
 }
 #my-image img:hover{
 	box-shadow: 0px 0px 8px 6px rgba(230, 196, 196, 0.3);
@@ -93,7 +142,8 @@ body{
 	transition: transform:0.3s;
 	}
 #about{
-	background: linear-gradient(to bottom, rgba(12,12,14,255) 0%, rgba(12,12,14,255) 40%, rgba(255, 0, 0, 0)60%, rgba(12,12,14,255) 100%), url('https://images.pexels.com/photos/983200/pexels-photo-983200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+	background: linear-gradient(to bottom, rgba(12,12,14,255) 0%, rgba(12,12,14,255) 40%, rgba(255, 0, 0, 0)60%, rgba(12,12,14,255) 100%), 
+	url('https://images.pexels.com/photos/983200/pexels-photo-983200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
     background-size: cover;
 }
 
@@ -102,7 +152,6 @@ body{
 	margin-top: 10vh;
 	width:70%;
 	text-align: left;
-	margin-left:15%;
 	font-family: roboto;
 	color: antiquewhite;
 	letter-spacing: 0.8px;
@@ -119,6 +168,6 @@ body{
 hr{
 	border: none;
 	height: 2px;
-	background-color: #1a1a1a;
+	background-color: black;
 	margin: 20px 0;
 }
