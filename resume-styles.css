@@ -74,7 +74,7 @@ body{
 .social-icons li a i:hover {
     box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
     border-radius: 50%;
-    transform: scale(1.1);
+    transform: scale(1.8);
 }
 
 .social-icons li a img {
@@ -180,11 +180,162 @@ section{
 	transition: color:0.3s, transform 0.3s;
 	}
 
+/*---Certification---*/
+.certification-container{
+	width:70%;
+}
 
+.certification-container h4{
+	color: whitesmoke;
+}
+
+.certification-container .i-certificate{
+	height:100px;
+	width: 100px;
+	background-size: contain;
+	position: relative;
+	margin-left: 30px;
+	border-radius: 10%;
+	opacity: 0.5;
+}
+
+.certification-container .i-certificate:hover{
+	transform:scale(1.1);
+	box-shadow: 0px 0px 8px 6px rgba(230, 196, 196, 0.3);
+}
+
+.certification-box{
+	padding: 10px;
+	margin: 10px;
+	width: auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	border: 0px solid white;
+	align-items: flex-start;
+	border-radius: 18px 70px 70px 18px;
+}
+
+.certification-box:hover{
+	background-color:darkblue;
+}
 /*---Experience---*/
 
 #experience{
 	background-color: black;
+}
+#experience h3{
+	color: antiquewhite;
+}
+.timeline {
+    position: relative;
+    width: 75%;
+}
+
+.timeline-box {
+    padding: 5px;
+    width: 40%;
+    min-height: 150px;
+    position: relative;
+    left: 5%;
+    text-align: right;
+}
+
+.timeline-box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: lightgrey;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n) {
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n+1)::after {
+    right: -11.8%;
+}
+
+.timeline-box:nth-child(2n)::after {
+    left: -9%;
+}
+
+.timeline-container {
+    padding: 8px;
+}
+
+.timeline-logo {
+    position: absolute;
+    width: 50px;
+    overflow: hidden;
+}
+
+.timeline-logo > img {
+    width: 100%;
+}
+
+#timeline-divider {
+    position: absolute;
+    width: 0;
+    top: 10%;
+    left: 50%;
+    border: 1px dashed #0096fa6b;
+    height: 66%;
+    color: #433E3F;
+}
+
+#timeline-divider .timeline-traveller {
+    position: sticky;
+    top: 135px;
+    z-index: 2;
+}
+
+#timeline-divider i {
+    transform: rotate(90deg);
+    margin-top: -35px;
+    display: block;
+    color: #2857a4;
+}
+
+.experience-designation {
+    font-size: 1.4rem;
+}
+
+.experience-company-name {
+    margin: 5px 0 0;
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: lightslategrey;
+    font-size: 1rem;
+}
+
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+
+/*--- Education ---*/
+#education{
+	background-color: black;
+}
+#education h3{
+	color: antiquewhite;
 }
 
 /*---Portfolio---*/
@@ -378,6 +529,10 @@ button:focus {
 
 
 /* setting background-color */
+
+.m0 {
+    margin: 0;
+}
 
 .mb-blue {
     background-color: #2857a4;
