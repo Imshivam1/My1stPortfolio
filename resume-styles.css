@@ -14,6 +14,55 @@ body{
 
 /* Horizontal Lists */
 
+.bars{
+    color: white;
+    margin: 0;
+    margin-right: 5%;
+    display: none;
+}
+
+.bars i {
+    font-size: 2rem;
+}
+
+.dropdown-list{
+    margin: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 4px 8px 1px #535547;
+}
+
+.dropdown-list ul{
+    margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem;
+}
+
+.dropdown-menu:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    right: 3%;
+}
+
+.dropdown-list li{
+    margin: 0.4rem 0px;
+}
+
+.no-list-style{
+    list-style: none;
+}
+
+.no-list-style li {
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.no-list-style li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
 .horizontal-list{
 	list-style: none;
 	padding-left: 0px;
@@ -144,7 +193,7 @@ section{
 
 	border-radius: 50%;
 	margin-top: -13vh;
-	margin-bottom: 20px; 
+	margin-bottom: 20px;
 }
 
 #my-image{
@@ -299,6 +348,81 @@ section{
     margin-top: -35px;
     display: block;
     color: #2857a4;
+}
+/*---Media query---*/
+
+@media only screen and (max-width: 600px) {
+    
+    .timeline-box {
+        width: 100%;
+        left: 10% !important;
+    }
+
+    .bars {
+        display: block;
+    }
+    
+    
+    .nav-menu {
+        display: none;
+    } 
+
+    #my-image{
+    	width: 25%;
+    	height: 30%;
+    }
+}
+@media screen and (max-width: 600px){
+	#timeline-divider{
+		left: 4%;
+		top:10%;
+	}
+
+	.timeline-box{
+		left: 12% !important;
+		width:80%;
+	}
+	.timeline-box::after{
+		left: -12% !important;
+	}
+
+	html{
+		font-size: 15px;
+	}
+	#contact-form {
+        margin-left: 0%;
+    }
+
+    #contact-container {
+        flex-wrap: wrap;
+    }
+
+    #my-details-container {
+        width: 80%;
+        margin: 10%;
+        margin-left: 25% !important;
+    }
+
+    #contact-form-container {
+        width: 80%;
+        margin: 10%;
+    }
+
+
+
+	/* .timeline-box:nth-child(2n+1)::after {
+		left:-12%;
+	}
+	.timeline-box:nth-child(2n)::after {
+		left:-12%;
+	}
+	you can skip the below rule by adding important to above left inside
+	timline-box which will give precedence to this
+	.timeline-box:nth-child(2n) {
+    left: 12%;
+    }
+    */
+
 }
 
 .experience-designation {
@@ -527,11 +651,54 @@ button:focus {
 	text-transform: capitalize;
 }*/
 
+/*---Media Query Sample---*/
 
+/*@media screen and (min-width: 600px){
+	body{
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 900px){
+	body{
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 1000px){
+	body{
+		width: 60%;
+	}
+}
+*/
 /* setting background-color */
+
+/* Common Text Align Classes */
+
+.text-right{
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/* Common Margin Classes */
 
 .m0 {
     margin: 0;
+}
+
+.mb75px {
+    margin-bottom: 75px;
+}
+
+.mb50px {
+    margin-bottom: 50px;
 }
 
 .mb-blue {
